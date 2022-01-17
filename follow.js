@@ -53,8 +53,10 @@ const birthYear = 1948;
 const thisYear = 1965;
 const firstName = "Carlos";
 const lastName = "Stevenson";
+const fullName = firstName + " " + lastName;
+const age = thisYear - birthYear
 
-const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old.";
+const greeting = "Hello! My name is " + fullName + " and I am " + age + " years old.";
 
 console.log(greeting);
 
@@ -68,25 +70,25 @@ console.log(greeting);
 
 // Step 2: 
 
-module.exports = {
-	testGroup: "a",
-	greeting,
-	birthYear,
-	thisYear,
-	firstName,
-	lastName
-}
-
-
-// Step 3: (Be sure to comment out Step 2)
-
 // module.exports = {
-// 	testGroup: "b",
+// 	testGroup: "a",
 // 	greeting,
 // 	birthYear,
 // 	thisYear,
 // 	firstName,
-// 	lastName,
-// 	fullName,
-// 	age
+// 	lastName
 // }
+
+
+// Step 3: (Be sure to comment out Step 2)
+
+module.exports = {
+	testGroup: "b",
+	greeting,
+	birthYear,
+	thisYear,
+	firstName,
+	lastName,
+	fullName,
+	age
+}
